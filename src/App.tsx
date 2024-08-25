@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 interface Country {
@@ -126,7 +125,7 @@ function App() {
   }
 
   function popUp(cca2: string) {
-    let popup = data.filter((item) => item.cca2 === cca2)[0]
+   const  popup = data.filter((item) => item.cca2 === cca2)[0]
     setSingleData(popup)
   }
 
